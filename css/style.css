@@ -121,7 +121,7 @@ h1, h2, h3 {
 }
 
 .product-card {
-  position: relative;         /* nodig zodat het label (zie verder) er bovenop geplaatst kan worden */
+  position: relative;         /* nodig zodat het label er bovenop geplaatst kan worden */
   width: 280px;
   background-color: #fafafa;
   border-radius: 12px;
@@ -184,7 +184,7 @@ h1, h2, h3 {
 }
 
 .label-new {
-  background-color: #2f9e44; /* groen *
+  background-color: #2f9e44; /* groen */
 }
 
 .label-sale {
@@ -193,4 +193,40 @@ h1, h2, h3 {
 
 .label-limited {
   background-color: #7048e8; /* paars */
+}
+
+/* ===========================
+   WAAROM STRIDESTORE
+=========================== */
+.why-us {
+  padding: 60px 40px;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.why-us h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.why-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.why-item {
+  width: 250px;
+}
+
+.why-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ff5a1f;
+}
+
+.why-item p {
+  font-size: 15px;
+  color: #444444;
 }
