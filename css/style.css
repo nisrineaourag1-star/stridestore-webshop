@@ -1,3 +1,6 @@
+/* ===========================
+   ALGEMENE BASISINSTELLINGEN
+=========================== */
 * {
   margin: 0;
   padding: 0;
@@ -5,19 +8,23 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif; /* standaard lettertype voor lopende tekst */
   background-color: #ffffff;
   color: #1a1a1a;
 }
 
+/* Titels krijgen een ander, opvallender lettertype dan de rest van de tekst */
 h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
 }
 
+/* ===========================
+   NAVIGATIE
+=========================== */
 .main-header {
-  display: flex;                  
-  justify-content: space-between; 
-  align-items: center;            
+  display: flex;                  /* Flexbox: logo en nav naast elkaar */
+  justify-content: space-between; /* logo links, nav rechts */
+  align-items: center;            /* verticaal gecentreerd */
   padding: 20px 40px;
   background-color: #111111;
 }
@@ -30,23 +37,27 @@ h1, h2, h3 {
 }
 
 .main-nav ul {
-  display: flex;        
-  gap: 30px;             
-  list-style: none;      
+  display: flex;        /* Flexbox: links naast elkaar in plaats van onder elkaar */
+  gap: 30px;             /* ruimte tussen de links */
+  list-style: none;      /* geen bolletjes voor de lijst-items */
 }
 
 .main-nav a {
   text-decoration: none;
   color: #ffffff;
   font-weight: 500;
-  transition: color 0.2s ease; 
+  transition: color 0.2s ease; /* zachte kleurovergang bij hover */
 }
 
 .main-nav a:hover {
-  color: #ff5a1f; 
+  color: #ff5a1f; /* accentkleur bij hover */
 }
+
+/* ===========================
+   INTRO / HERO-SECTIE
+=========================== */
 .hero {
-  display: flex;             
+  display: flex;              /* Flexbox: tekst en afbeelding naast elkaar */
   align-items: center;
   justify-content: space-between;
   padding: 60px 40px;
@@ -87,4 +98,99 @@ h1, h2, h3 {
   max-width: 450px;
   width: 100%;
   border-radius: 12px;
+}
+
+/* ===========================
+   PRODUCTGRID
+=========================== */
+.products {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: flex;              /* Flexbox: cards naast elkaar */
+  flex-wrap: wrap;            /* cards springen naar nieuwe rij als er geen plaats meer is */
+  justify-content: center;
+  gap: 30px;
+}
+
+.product-card {
+  position: relative;         /* nodig zodat het label (zie verder) er bovenop geplaatst kan worden */
+  width: 280px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* lichte "lift"-animatie bij hover */
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover; /* zorgt dat elke foto dezelfde afmeting krijgt zonder vervorming */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.product-card .price {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff5a1f;
+  margin-bottom: 15px;
+}
+
+.btn-secondary {
+  display: inline-block;
+  border: 2px solid #111111;
+  color: #111111;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+/* Labels die op sommige producten getoond worden ("Nieuw", "Sale", "Limited Edition") */
+.label {
+  position: absolute;   /* wordt bovenop de productfoto geplaatst, dankzij position: relative op .product-card */
+  top: 15px;
+  left: 15px;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.label-new {
+  background-color: #2f9e44; /* groen *
+}
+
+.label-sale {
+  background-color: #e03131; /* rood */
+}
+
+.label-limited {
+  background-color: #7048e8; /* paars */
 }

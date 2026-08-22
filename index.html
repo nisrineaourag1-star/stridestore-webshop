@@ -5,14 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StrideStore - Sneakers voor elke stap</title>
 
+  <!-- Google Fonts: Poppins voor titels, Inter voor lopende tekst -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
+  <!-- Eigen externe stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+  <!-- Navigatie: logo + links naar categorieën -->
   <header class="main-header">
     <div class="logo">StrideStore</div>
 
@@ -25,6 +28,8 @@
       </ul>
     </nav>
   </header>
+
+  <!-- Intro-sectie: stelt de shop visueel voor -->
   <section class="hero">
     <div class="hero-text">
       <h1>Elke stap telt.</h1>
@@ -33,5 +38,66 @@
     </div>
     <img src="images/hero-sneaker.jpg" alt="Sneaker uitgelicht op een gekleurde achtergrond" class="hero-image">
   </section>
+
+  <!-- Productgrid: overzicht van minimaal 6 producten -->
+  <section class="products" id="producten">
+    <h2>Onze collectie</h2>
+
+    <div class="product-grid">
+
+      <!-- Product 1: met label "Nieuw" -->
+      <article class="product-card">
+        <span class="label label-new">Nieuw</span>
+        <img src="images/product-1.jpg" alt="Witte sneaker met gele veters">
+        <h3>Urban Classic</h3>
+        <p class="price">€89,99</p>
+        <a href="product.html" class="btn-secondary">Bekijk product</a>
+      </article>
+
+      <!-- Product 2: geen label -->
+      <article class="product-card">
+        <img src="images/product-2.jpg" alt="Zwarte sportsneaker">
+        <h3>Runner Pro</h3>
+        <p class="price">€109,99</p>
+        <a href="product.html" class="btn-secondary">Bekijk product</a>
+      </article>
+
+      <!-- Product 3: met label "Sale" -->
+      <article class="product-card">
+        <span class="label label-sale">Sale</span>
+        <img src="images/product-3.jpg" alt="Blauwe sneaker met witte zool">
+        <h3>Street Comfort</h3>
+        <p class="price">€69,99</p>
+        <a href="product.html" class="btn-secondary">Bekijk product</a>
+      </article>
+
+      <!-- Product 4: geen label -->
+      <article class="product-card">
+        <img src="images/product-4.jpg" alt="Grijze sneaker met mesh-detail">
+        <h3>Flex Motion</h3>
+        <p class="price">€94,99</p>
+        <a href="product.html" class="btn-secondary">Bekijk product</a>
+      </article>
+
+      <!-- Product 5: met label "Limited Edition" -->
+      <article class="product-card">
+        <span class="label label-limited">Limited Edition</span>
+        <img src="images/product-5.jpg" alt="Beige sneaker met goudkleurige details">
+        <h3>Golden Stride</h3>
+        <p class="price">€129,99</p>
+        <a href="product.html" class="btn-secondary">Bekijk product</a>
+      </article>
+
+      <!-- Product 6: geen label -->
+      <article class="product-card">
+        <img src="images/product-6.jpg" alt="Rode sneaker met witte zool">
+        <h3>Bold Runner</h3>
+        <p class="price">€99,99</p>
+        <a href="product.html" class="btn-secondary">Bekijk product</a>
+      </article>
+
+    </div>
+  </section>
+
 </body>
 </html>
