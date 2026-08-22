@@ -4,16 +4,15 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* zorgt dat padding/border niet de breedte van elementen vergroten */
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Inter', sans-serif; /* standaard lettertype voor lopende tekst */
+  font-family: 'Inter', sans-serif;
   background-color: #ffffff;
   color: #1a1a1a;
 }
 
-/* Titels krijgen een ander, opvallender lettertype dan de rest van de tekst */
 h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
 }
@@ -22,9 +21,9 @@ h1, h2, h3 {
    NAVIGATIE
 =========================== */
 .main-header {
-  display: flex;                  /* Flexbox: logo en nav naast elkaar */
-  justify-content: space-between; /* logo links, nav rechts */
-  align-items: center;            /* verticaal gecentreerd */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px 40px;
   background-color: #111111;
 }
@@ -37,27 +36,27 @@ h1, h2, h3 {
 }
 
 .main-nav ul {
-  display: flex;        /* Flexbox: links naast elkaar in plaats van onder elkaar */
-  gap: 30px;             /* ruimte tussen de links */
-  list-style: none;      /* geen bolletjes voor de lijst-items */
+  display: flex;
+  gap: 30px;
+  list-style: none;
 }
 
 .main-nav a {
   text-decoration: none;
   color: #ffffff;
   font-weight: 500;
-  transition: color 0.2s ease; /* zachte kleurovergang bij hover */
+  transition: color 0.2s ease;
 }
 
 .main-nav a:hover {
-  color: #ff5a1f; /* accentkleur bij hover */
+  color: #ff5a1f;
 }
 
 /* ===========================
    INTRO / HERO-SECTIE
 =========================== */
 .hero {
-  display: flex;              /* Flexbox: tekst en afbeelding naast elkaar */
+  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 60px 40px;
@@ -114,14 +113,14 @@ h1, h2, h3 {
 }
 
 .product-grid {
-  display: flex;              /* Flexbox: cards naast elkaar */
-  flex-wrap: wrap;            /* cards springen naar nieuwe rij als er geen plaats meer is */
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
 
 .product-card {
-  position: relative;         /* nodig zodat het label er bovenop geplaatst kan worden */
+  position: relative;
   width: 280px;
   background-color: #fafafa;
   border-radius: 12px;
@@ -131,13 +130,13 @@ h1, h2, h3 {
 }
 
 .product-card:hover {
-  transform: translateY(-5px); /* lichte "lift"-animatie bij hover */
+  transform: translateY(-5px);
 }
 
 .product-card img {
   width: 100%;
   height: 220px;
-  object-fit: cover; /* zorgt dat elke foto dezelfde afmeting krijgt zonder vervorming */
+  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 15px;
 }
@@ -170,9 +169,8 @@ h1, h2, h3 {
   color: #ffffff;
 }
 
-/* Labels die op sommige producten getoond worden ("Nieuw", "Sale", "Limited Edition") */
 .label {
-  position: absolute;   /* wordt bovenop de productfoto geplaatst, dankzij position: relative op .product-card */
+  position: absolute;
   top: 15px;
   left: 15px;
   padding: 5px 12px;
@@ -184,15 +182,15 @@ h1, h2, h3 {
 }
 
 .label-new {
-  background-color: #2f9e44; /* groen */
+  background-color: #2f9e44;
 }
 
 .label-sale {
-  background-color: #e03131; /* rood */
+  background-color: #e03131;
 }
 
 .label-limited {
-  background-color: #7048e8; /* paars */
+  background-color: #7048e8;
 }
 
 /* ===========================
@@ -229,4 +227,63 @@ h1, h2, h3 {
 .why-item p {
   font-size: 15px;
   color: #444444;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+.main-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 50px 40px 20px;
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.footer-column {
+  max-width: 250px;
+}
+
+.footer-column .logo {
+  margin-bottom: 10px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer-column p {
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+.footer-column a:hover {
+  color: #ff5a1f;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  margin-top: 20px;
+  border-top: 1px solid #333333;
+  font-size: 13px;
+  color: #888888;
 }
