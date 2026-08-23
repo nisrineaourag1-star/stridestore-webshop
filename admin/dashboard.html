@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productinventaris - StrideStore Admin</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+  <!-- Admin-navigatie: eenvoudig, zakelijk -->
+  <header class="admin-header">
+    <div class="logo">StrideStore Admin</div>
+    <nav class="admin-nav">
+      <a href="dashboard.html">Producten</a>
+      <a href="product-form.html">Product toevoegen</a>
+      <a href="login.html">Uitloggen</a>
+    </nav>
+  </header>
+
+  <main class="admin-main">
+    <h1>Productinventaris</h1>
+
+    <!-- Zoekbalk (visueel, niet functioneel) -->
+    <div class="search-bar">
+      <input type="text" placeholder="Zoek op productnaam...">
+      <button type="button">Zoeken</button>
+    </div>
+
+    <!-- Tabel met alle producten -->
+    <table class="product-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Productnaam</th>
+          <th>Voorraadstatus</th>
+          <th>Prijs</th>
+          <th>Acties</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>001</td>
+          <td>Urban Classic</td>
+          <td><span class="status in-stock">Op voorraad</span></td>
+          <td>€89,99</td>
+          <td>
+            <a href="product-form.html" class="btn-edit">Bewerken</a>
+            <button type="button" class="btn-delete">Verwijderen</button>
+          </td>
+        </tr>
+        <tr>
+          <td>002</td>
+          <td>Runner Pro</td>
+          <td><span class="status in-stock">Op voorraad</span></td>
+          <td>€109,99</td>
+          <td>
+            <a href="product-form.html" class="btn-edit">Bewerken</a>
+            <button type="button" class="btn-delete">Verwijderen</button>
+          </td>
+        </tr>
+        <tr>
+          <td>003</td>
+          <td>Street Comfort</td>
+          <td><span class="status low-stock">Bijna op</span></td>
+          <td>€69,99</td>
+          <td>
+            <a href="product-form.html" class="btn-edit">Bewerken</a>
+            <button type="button" class="btn-delete">Verwijderen</button>
+          </td>
+        </tr>
+        <tr>
+          <td>004</td>
+          <td>Flex Motion</td>
+          <td><span class="status in-stock">Op voorraad</span></td>
+          <td>€94,99</td>
+          <td>
+            <a href="product-form.html" class="btn-edit">Bewerken</a>
+            <button type="button" class="btn-delete">Verwijderen</button>
+          </td>
+        </tr>
+        <tr>
+          <td>005</td>
+          <td>Golden Stride</td>
+          <td><span class="status out-of-stock">Uitverkocht</span></td>
+          <td>€129,99</td>
+          <td>
+            <a href="product-form.html" class="btn-edit">Bewerken</a>
+            <button type="button" class="btn-delete">Verwijderen</button>
+          </td>
+        </tr>
+        <tr>
+          <td>006</td>
+          <td>Bold Runner</td>
+          <td><span class="status in-stock">Op voorraad</span></td>
+          <td>€99,99</td>
+          <td>
+            <a href="product-form.html" class="btn-edit">Bewerken</a>
+            <button type="button" class="btn-delete">Verwijderen</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+</body>
+</html>

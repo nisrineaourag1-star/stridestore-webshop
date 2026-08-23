@@ -76,4 +76,184 @@ h1, h2, h3 {
 }
 
 .btn-login {
-  margin-top:
+  margin-top: 25px;
+  padding: 12px;
+  background-color: #1c1f26;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-login:hover {
+  background-color: #33394a;
+}
+
+/* ===========================
+   ADMIN NAVIGATIE
+=========================== */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #1c1f26;
+  color: #ffffff;
+}
+
+.admin-header .logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.admin-nav {
+  display: flex;
+  gap: 25px;
+}
+
+.admin-nav a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.admin-nav a:hover {
+  color: #ffffff;
+}
+
+/* ===========================
+   ADMIN MAIN CONTENT
+=========================== */
+.admin-main {
+  padding: 40px;
+}
+
+.admin-main h1 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+/* ===========================
+   ZOEKBALK
+=========================== */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  max-width: 400px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+}
+
+.search-bar button {
+  padding: 10px 18px;
+  background-color: #1c1f26;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search-bar button:hover {
+  background-color: #33394a;
+}
+
+/* ===========================
+   PRODUCTTABEL
+=========================== */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.product-table th,
+.product-table td {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 14px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.product-table th {
+  background-color: #f4f5f7;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.product-table tr:last-child td {
+  border-bottom: none;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status.in-stock {
+  background-color: #e6f4ea;
+  color: #2f9e44;
+}
+
+.status.low-stock {
+  background-color: #fff4e0;
+  color: #e8890c;
+}
+
+.status.out-of-stock {
+  background-color: #fde8e8;
+  color: #e03131;
+}
+
+.btn-edit {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #1c1f26;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 13px;
+  margin-right: 8px;
+}
+
+.btn-edit:hover {
+  background-color: #33394a;
+}
+
+.btn-delete {
+  padding: 6px 12px;
+  background-color: transparent;
+  border: 1px solid #e03131;
+  color: #e03131;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-delete:hover {
+  background-color: #e03131;
+  color: #ffffff;
+}
