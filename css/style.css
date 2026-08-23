@@ -390,3 +390,73 @@ h1, h2, h3 {
   font-size: 32px;
   margin-bottom: 40px;
 }
+/* ===========================
+   RESPONSIVE DESIGN
+   Breakpoint op 900px: eigen gekozen waarde,
+   omdat de productgrid en hero-sectie hieronder
+   niet meer comfortabel naast elkaar passen.
+=========================== */
+@media (max-width: 900px) {
+
+  /* Navigatie: logo en links onder elkaar in plaats van naast elkaar */
+  .main-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .main-nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* Hero: tekst en afbeelding onder elkaar */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-image {
+    max-width: 100%;
+  }
+
+  /* Productgrid: cards blijven wrappen, maar iets smaller */
+  .product-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* Waarom StrideStore: blokken onder elkaar */
+  .why-item {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* Productdetail-pagina: foto en info onder elkaar */
+  .product-detail {
+    flex-direction: column;
+  }
+
+  .product-detail-image {
+    max-width: 100%;
+  }
+
+  .product-detail-info {
+    max-width: 100%;
+  }
+
+  /* Footer: kolommen onder elkaar */
+  .main-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-column {
+    max-width: 100%;
+  }
+}
