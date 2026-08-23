@@ -287,3 +287,106 @@ h1, h2, h3 {
   font-size: 13px;
   color: #888888;
 }
+/* ===========================
+   PRODUCTDETAIL-PAGINA
+=========================== */
+.product-detail {
+  display: flex;
+  gap: 50px;
+  padding: 60px 40px;
+  align-items: flex-start;
+}
+
+.product-detail-image {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.product-detail-info {
+  max-width: 500px;
+}
+
+.product-detail-info h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.product-detail-info .price {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ff5a1f;
+  margin-bottom: 20px;
+}
+
+.product-detail-info .description {
+  font-size: 16px;
+  color: #444444;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.specs {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.specs li {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #333333;
+}
+
+/* ===========================
+   REVIEWS
+=========================== */
+.reviews {
+  padding: 60px 40px;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.reviews h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.review-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.review-card {
+  width: 280px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.review-author {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.review-text {
+  font-size: 14px;
+  color: #555555;
+}
+
+/* ===========================
+   GERELATEERDE PRODUCTEN
+=========================== */
+.related-products {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.related-products h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
