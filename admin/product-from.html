@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product toevoegen - StrideStore Admin</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+  <!-- Zelfde admin-navigatie als dashboard, voor consistentie -->
+  <header class="admin-header">
+    <div class="logo">StrideStore Admin</div>
+    <nav class="admin-nav">
+      <a href="dashboard.html">Producten</a>
+      <a href="product-form.html">Product toevoegen</a>
+      <a href="login.html">Uitloggen</a>
+    </nav>
+  </header>
+
+  <main class="admin-main">
+    <h1>Product toevoegen</h1>
+
+    <form class="product-form">
+
+      <!-- Tekstveld -->
+      <div class="form-group">
+        <label for="product-name">Productnaam</label>
+        <input type="text" id="product-name" name="product-name" placeholder="bv. Urban Classic" required>
+      </div>
+
+      <!-- Getalveld -->
+      <div class="form-group">
+        <label for="product-price">Prijs (€)</label>
+        <input type="number" id="product-price" name="product-price" placeholder="89.99" min="0" step="0.01" required>
+      </div>
+
+      <!-- Getalveld voor voorraad -->
+      <div class="form-group">
+        <label for="product-stock">Aantal op voorraad</label>
+        <input type="number" id="product-stock" name="product-stock" placeholder="0" min="0" required>
+      </div>
+
+      <!-- Dropdown -->
+      <div class="form-group">
+        <label for="product-category">Categorie</label>
+        <select id="product-category" name="product-category">
+          <option value="sneakers">Sneakers</option>
+          <option value="running">Running</option>
+          <option value="sale">Sale</option>
+        </select>
+      </div>
+
+      <!-- Dropdown voor kleur -->
+      <div class="form-group">
+        <label for="product-color">Kleur</label>
+        <select id="product-color" name="product-color">
+          <option value="wit">Wit</option>
+          <option value="zwart">Zwart</option>
+          <option value="blauw">Blauw</option>
+          <option value="rood">Rood</option>
+          <option value="beige">Beige</option>
+        </select>
+      </div>
+
+      <!-- Checkboxes -->
+      <div class="form-group">
+        <label>Label(s)</label>
+        <div class="checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" name="labels" value="nieuw"> Nieuw
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="labels" value="sale"> Sale
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" name="labels" value="limited"> Limited Edition
+          </label>
+        </div>
+      </div>
+
+      <!-- Tekstgebied -->
+      <div class="form-group">
+        <label for="product-description">Beschrijving</label>
+        <textarea id="product-description" name="product-description" rows="5" placeholder="Beschrijf het product..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">Product opslaan</button>
+
+    </form>
+  </main>
+
+</body>
+</html>
